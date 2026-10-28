@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Hotel booking confirmation page</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <!-- checkbox opens/closes the menu on mobile (no JS needed) -->
+        <input type="checkbox" id="menuToggle" class="menuToggle" />
+        <div class="nav">
+          <a href="#" class="logo">
+            <img src="./assets/images/icon-sun.svg" alt="" />
+            <span class="logoText">
+              <span class="logoTop">Maison</span>
+              <span class="logoBottom">Soleil</span>
+            </span>
+          </a>
+          <label for="menuToggle" class="menuBtn" aria-label="Toggle menu">
+            <img src="./assets/images/icon-menu.svg" alt="" class="iconMenu" />
+            <img src="./assets/images/icon-close.svg" alt="" class="iconClose" />
+          </label>
+        </div>
+
+        <div class="sidebarMenu">
+          <nav class="sidebar-nav" aria-label="Main">
+            <a href="#" class="navBtn active" aria-current="page">
+              <img src="./assets/images/icon-bed.svg" alt="" />Your stay
+              <span class="badge">1</span>
+            </a>
+            <a href="#" class="navBtn">
+              <img src="./assets/images/icon-house.svg" alt="" />The house
+            </a>
+            <a href="#" class="navBtn">
+              <img src="./assets/images/icon-pin.svg" alt="" />Around town
+            </a>
+            <a href="#" class="navBtn">
+              <img src="./assets/images/icon-breakfast-outline.svg" alt="" />Breakfast
+            </a>
+            <a href="#" class="navBtn">
+              <img src="./assets/images/icon-mail.svg" alt="" />Messages
+            </a>
+          </nav>
+
+          <footer>
+            <section class="weatherBox">
+              <p class="weatherLabel">Today in Cassis</p>
+              <img src="./assets/images/icon-weather.svg" alt="" class="weatherIcon" />
+              <p class="weatherTemp">27&deg;</p>
+              <p class="weatherText">Sunny · light breeze</p>
+            </section>
+            <p class="footerText">
+              Est. 1987 <br />
+              Maison Soleil · 12 Rue des Oliviers · Cassis <br />
+              © 2026 Maison Soleil
+            </p>
+          </footer>
+        </div>
+      </aside>
+
+      <main class="content">
+        <p class="eyebrow">Booking · Confirmed</p>
+        <div class="navbar">
+          <h1>Bienvenue, <span class="guestName">Lucia.</span></h1>
+          <div class="actions">
+            <button class="btn btnLight">Print receipt</button>
+            <button class="btn btnDark">Add to calendar</button>
+          </div>
+        </div>
+
+        <!-- Receipt + welcome card -->
+        <div class="stayCards">
+          <section class="receipt" aria-label="Receipt">
+            <div class="receiptTop">
+              <div>
+                <p class="label">Receipt</p>
+                <h2 class="receiptTitle">Your stay</h2>
+              </div>
+              <p class="receiptNumber">№ MS-2026<br />0421-AH</p>
+            </div>
+
+            <div class="receiptDates">
+              <div class="dateBox">
+                <p class="label">Check in</p>
+                <p class="date">25 Apr</p>
+                <p class="dateInfo">Saturday · 15:00</p>
+              </div>
+              <div class="dateBox">
+                <p class="label">Check out</p>
+                <p class="date">29 Apr</p>
+                <p class="dateInfo">Wednesday · 11:00</p>
+              </div>
+            </div>
+
+            <ul class="receiptList">
+              <li><span>Room · La Garrigue × 4 nights</span><span class="price">€ 620.00</span></li>
+              <li><span>Breakfast × 2 guests</span><span class="price">€ 96.00</span></li>
+              <li><span>Tourist tax</span><span class="price">€ 14.40</span></li>
+            </ul>
+
+            <div class="receiptTotal">
+              <p class="label">Total paid</p>
+              <p class="totalPrice">€ 730.40</p>
+            </div>
+
+            <div class="receiptBottom">
+              <p class="label">Paid · Wise · GBP</p>
+              <img src="./assets/images/icon-barcode.svg" alt="" class="barcode" />
+            </div>
+          </section>
+
+          <img src="./assets/images/icon-sun.svg" alt="" class="fanSun" />
+
+          <section class="welcomeCard" aria-label="Welcome card">
+            <div class="welcomeTop">
+              <p class="label">Welcome card</p>
+              <img src="./assets/images/icon-sun.svg" alt="" class="welcomeSun" />
+            </div>
+            <p class="hostIntro">A note from your host,</p>
+            <p class="hostName">Margaux.</p>
+            <p class="hostNote">
+              We're so glad you're coming. The shutters will be open, the
+              lemonade cold, and the cat - Poivre - pretending not to notice
+              you.
+            </p>
+            <p class="label">Room</p>
+            <p class="roomName">La Garrigue</p>
+          </section>
+        </div>
+        <p class="fanHint">✦ Hover to fan ✦</p>
+
+        <div class="infoCards">
+          <section class="infoCard arrival">
+            <div class="infoDesign">
+              <div class="infoTitle">
+                <span class="infoIcon">
+                  <img src="./assets/images/icon-key.svg" alt="" />
+                </span>
+                <h3>Arrival</h3>
+              </div>
+              <p class="infoNumber">01</p>
+            </div>
+            <h2>Check-in from 15:00</h2>
+            <p class="infoDate">Sat, 25 April</p>
+            <p class="infoDet">
+              Ring the brass bell by the blue door. If we're at the market, the
+              key is in the terracotta pot by the olive tree.
+            </p>
+          </section>
+
+          <section class="infoCard wifi">
+            <div class="infoDesign">
+              <div class="infoTitle">
+                <span class="infoIcon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                    <path d="M2 9a15 15 0 0 1 20 0" />
+                    <path d="M5.5 12.5a10 10 0 0 1 13 0" />
+                    <path d="M9 16a5 5 0 0 1 6 0" />
+                    <circle cx="12" cy="19.5" r="1" fill="#fff" />
+                  </svg>
+                </span>
+                <h3>WiFi</h3>
+              </div>
+              <p class="infoNumber">02</p>
+            </div>
+            <h2>Le Soleil · Guest</h2>
+            <p class="infoDate">Password below</p>
+            <div class="wifiRow">
+              <span class="wifiLabel">Network</span>
+              <span>Le Soleil · Guest</span>
+            </div>
+            <div class="wifiRow">
+              <span class="wifiLabel">Password</span>
+              <span>
+                <span>soleil-2026</span>
+                <button class="copyBtn">Copy</button>
+              </span>
+            </div>
+          </section>
+
+          <section class="infoCard breakfast">
+            <div class="infoDesign">
+              <div class="infoTitle">
+                <span class="infoIcon">
+                  <img src="./assets/images/icon-breakfast.svg" alt="" />
+                </span>
+                <h3>Breakfast</h3>
+              </div>
+              <p class="infoNumber">03</p>
+            </div>
+            <h2>Served 8 – 10:30</h2>
+            <p class="infoDate">On the terrace</p>
+            <p class="infoDet">
+              Fresh figs, Marseille honey, pain au levain, and espresso.
+              Gluten-free option? Leave a note the night before.
+            </p>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <!--<footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>-->
+  </body>
+</html>
